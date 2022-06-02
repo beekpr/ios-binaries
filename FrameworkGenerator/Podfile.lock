@@ -1,0 +1,210 @@
+PODS:
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - CRToast (0.0.9)
+  - DSJSONSchemaValidation (2.0.7)
+  - ItlySchemaValidatorPlugin (1.2.1):
+    - DSJSONSchemaValidation (~> 2.0.0)
+    - ItlySdk (~> 1.0)
+  - ItlySdk (1.2.0)
+  - KVOController (1.2.0)
+  - MaterialComponents/ActivityIndicator (124.2.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+    - MotionAnimator (~> 4.0)
+  - MaterialComponents/AnimationTiming (124.2.0)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/Buttons (124.2.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/Shadow
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Cards (124.2.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Application
+  - MaterialComponents/Palettes (124.2.0)
+  - MaterialComponents/private/Application (124.2.0)
+  - MaterialComponents/private/Color (124.2.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Icons/Base (124.2.0)
+  - MaterialComponents/private/Icons/ic_check_circle (124.2.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/KeyboardWatcher (124.2.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (124.2.0)
+  - MaterialComponents/private/Overlay (124.2.0)
+  - MaterialComponents/ProgressView (124.2.0):
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MDFInternationalization
+  - MaterialComponents/Ripple (124.2.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Shadow (124.2.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/ShadowElevations (124.2.0)
+  - MaterialComponents/ShadowLayer (124.2.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (124.2.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (124.2.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Snackbar (124.2.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+  - MaterialComponents/TextFields (124.2.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (124.2.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (3.0.0)
+  - MDFTextAccessibility (2.0.1)
+  - MotionAnimator (4.0.1):
+    - MotionInterchange (~> 3.0)
+  - MotionInterchange (3.0.0)
+  - PromiseKit/CorePromise (6.8.5)
+  - PromiseKit/SystemConfiguration (6.8.5):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIImagePickerController (6.8.5):
+    - PromiseKit/UIKit
+  - PromiseKit/UIKit (6.8.5):
+    - PromiseKit/CorePromise
+  - PubNub (4.17.0):
+    - PubNub/Core (= 4.17.0)
+  - PubNub/Core (4.17.0)
+  - QRCodeReaderViewController (4.0.2)
+  - SZTextView (1.3.0)
+  - Themes (2.0.0)
+
+DEPENDENCIES:
+  - AFNetworking/NSURLConnection (from `https://github.com/beekpr/AFNetworking`)
+  - AFNetworking/NSURLSession (from `https://github.com/beekpr/AFNetworking`)
+  - AFNetworking/Reachability (from `https://github.com/beekpr/AFNetworking`)
+  - AFNetworking/Security (from `https://github.com/beekpr/AFNetworking`)
+  - AFNetworking/Serialization (from `https://github.com/beekpr/AFNetworking`)
+  - CRToast (~> 0.0.7)
+  - ItlySchemaValidatorPlugin
+  - ItlySdk
+  - KVOController (~> 1.2.0)
+  - MaterialComponents/ActivityIndicator (~> 124.2.0)
+  - MaterialComponents/Cards (~> 124.2.0)
+  - MaterialComponents/ProgressView (~> 124.2.0)
+  - MaterialComponents/Snackbar (~> 124.2.0)
+  - MaterialComponents/TextFields (~> 124.2.0)
+  - MDFInternationalization
+  - PromiseKit/SystemConfiguration (~> 6.8.3)
+  - PromiseKit/UIImagePickerController (~> 6.8.3)
+  - PromiseKit/UIKit (~> 6.8.3)
+  - PubNub (~> 4.17.0)
+  - QRCodeReaderViewController (~> 4.0.2)
+  - SZTextView (~> 1.3.0)
+  - Themes (from `https://github.com/onmyway133/EasyTheme.git`)
+
+SPEC REPOS:
+  trunk:
+    - CRToast
+    - DSJSONSchemaValidation
+    - ItlySchemaValidatorPlugin
+    - ItlySdk
+    - KVOController
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - MotionAnimator
+    - MotionInterchange
+    - PromiseKit
+    - PubNub
+    - QRCodeReaderViewController
+    - SZTextView
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/beekpr/AFNetworking
+  Themes:
+    :git: https://github.com/onmyway133/EasyTheme.git
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: 90742e0890a48f386a9549251e802c7e8ef6376e
+    :git: https://github.com/beekpr/AFNetworking
+  Themes:
+    :commit: 32e5c28248f89f17511ad2f7602b0f01247a25eb
+    :git: https://github.com/onmyway133/EasyTheme.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 4e7e2ee63993f6aa0bbad6f8bb7641d9bfa85652
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  DSJSONSchemaValidation: 46e30ccfa9908c49d184f453d556f55aa0aac1ff
+  ItlySchemaValidatorPlugin: d41cd1ec8928c15b5ecc54d90d5f83b32c902411
+  ItlySdk: 745d83296255c4ca221640381ab79cbe0078e381
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
+  MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
+  MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
+  PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
+  PubNub: 306896876c3089884067609ff25d628a547d2942
+  QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
+  SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
+  Themes: d3810257315e54a035691c204aa40a92f2f1085b
+
+PODFILE CHECKSUM: 947081240ffa04ccf8b8ad4472d781354d1e03ac
+
+COCOAPODS: 1.11.2

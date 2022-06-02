@@ -1,0 +1,16 @@
+AFNetworking
+CRToast
+DSJSONSchemaValidation
+ItlySchemaValidatorPlugin
+ItlySdk
+KVOController
+MDFInternationalization
+MDFTextAccessibility
+MaterialComponents
+MotionAnimator
+MotionInterchange
+PromiseKit
+PubNub
+QRCodeReaderViewController
+SZTextView
+Themes
