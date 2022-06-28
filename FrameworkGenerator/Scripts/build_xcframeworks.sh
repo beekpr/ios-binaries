@@ -25,13 +25,13 @@ rm -rf  $OUTPUT
  -scheme "${SCHEME}" \
  -archivePath ${IOS_ARCHIVE_PATH} \
  -sdk iphoneos \
- SKIP_INSTALL=NO ENABLE_BITCODE=YES | xcpretty
+ SKIP_INSTALL=NO | xcpretty
 
 xcodebuild archive \
  -scheme "${SCHEME}" \
  -archivePath ${IOS_SIM_ARCHIVE_PATH} \
  -sdk iphonesimulator \
- SKIP_INSTALL=NO ENABLE_BITCODE=YES | xcpretty
+ SKIP_INSTALL=NO | xcpretty
 
 create_xcframework() {
     FRAMEWORK_NAME=$(basename -- "$1")
@@ -42,7 +42,7 @@ create_xcframework() {
         return
     fi
 
-    xcodebuild -create-xcframework \
+    xcodebuild -create-xcframework -allow-internal-distribution \
     -framework "${IOS_SIM_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework" \
     -framework "${IOS_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework" \
     -output "${OUTPUT}/${FRAMEWORK_NAME}.xcframework" \
@@ -56,4 +56,4 @@ find ${IOS_ARCHIVE_PATH}/Products/Library/Frameworks -maxdepth 1 -name "*.framew
 done
 
 cd $OUTPUT
-find . -name "*.zip" -print0 | sort -z | xargs -r0 sha256sum > checksums-tag.txt
+find . -name "*.zip" -print0 | sort -z | xargs -r0 shasum -a 256 > checksums-tag.txt
