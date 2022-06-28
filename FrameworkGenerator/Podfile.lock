@@ -15,7 +15,7 @@ PODS:
   - ItlySchemaValidatorPlugin (1.2.1):
     - DSJSONSchemaValidation (~> 2.0.0)
     - ItlySdk (~> 1.0)
-  - ItlySdk (1.2.0)
+  - ItlySdk (1.2.1)
   - KVOController (1.2.0)
   - MaterialComponents/ActivityIndicator (124.2.0):
     - MaterialComponents/Palettes
@@ -129,8 +129,44 @@ PODS:
     - PubNub/Core (= 4.17.0)
   - PubNub/Core (4.17.0)
   - QRCodeReaderViewController (4.0.2)
+  - Realm (10.28.1):
+    - Realm/Headers (= 10.28.1)
+  - Realm/Headers (10.28.1)
+  - RealmSwift (10.28.1):
+    - Realm (= 10.28.1)
+  - RxBlocking (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxTest (6.5.0):
+    - RxSwift (= 6.5.0)
   - SZTextView (1.3.0)
   - Themes (2.0.0)
+  - TransformerKit (1.1.1):
+    - TransformerKit/Core (= 1.1.1)
+    - TransformerKit/Cryptography (= 1.1.1)
+    - TransformerKit/Data (= 1.1.1)
+    - TransformerKit/Date (= 1.1.1)
+    - TransformerKit/Image (= 1.1.1)
+    - TransformerKit/JSON (= 1.1.1)
+    - TransformerKit/String (= 1.1.1)
+  - TransformerKit/Core (1.1.1)
+  - TransformerKit/Cryptography (1.1.1):
+    - TransformerKit/Core
+  - TransformerKit/Data (1.1.1):
+    - TransformerKit/Core
+  - TransformerKit/Date (1.1.1):
+    - TransformerKit/Core
+  - TransformerKit/Image (1.1.1):
+    - TransformerKit/Core
+  - TransformerKit/JSON (1.1.1):
+    - TransformerKit/Core
+  - TransformerKit/String (1.1.1):
+    - TransformerKit/Core
 
 DEPENDENCIES:
   - AFNetworking/NSURLConnection (from `https://github.com/beekpr/AFNetworking`)
@@ -153,8 +189,14 @@ DEPENDENCIES:
   - PromiseKit/UIKit (~> 6.8.3)
   - PubNub (~> 4.17.0)
   - QRCodeReaderViewController (~> 4.0.2)
+  - RealmSwift (~> 10.28.1)
+  - RxBlocking (~> 6.5.0)
+  - RxCocoa (~> 6.5.0)
+  - RxSwift (~> 6.5.0)
+  - RxTest (~> 6.5.0)
   - SZTextView (~> 1.3.0)
   - Themes (from `https://github.com/onmyway133/EasyTheme.git`)
+  - TransformerKit (~> 1.1.0)
 
 SPEC REPOS:
   trunk:
@@ -171,7 +213,15 @@ SPEC REPOS:
     - PromiseKit
     - PubNub
     - QRCodeReaderViewController
+    - Realm
+    - RealmSwift
+    - RxBlocking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
     - SZTextView
+    - TransformerKit
 
 EXTERNAL SOURCES:
   AFNetworking:
@@ -192,7 +242,7 @@ SPEC CHECKSUMS:
   CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
   DSJSONSchemaValidation: 46e30ccfa9908c49d184f453d556f55aa0aac1ff
   ItlySchemaValidatorPlugin: d41cd1ec8928c15b5ecc54d90d5f83b32c902411
-  ItlySdk: 745d83296255c4ca221640381ab79cbe0078e381
+  ItlySdk: bac0dd9414a46595845e8536f9472de2201ef32a
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
@@ -202,9 +252,17 @@ SPEC CHECKSUMS:
   PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
   PubNub: 306896876c3089884067609ff25d628a547d2942
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
+  Realm: f4674e0e7ee537f67a78d79bd8319bc777d61d06
+  RealmSwift: 0e0e4786685c4442bf56d3831dfefb5fa05d6fd6
+  RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
   Themes: d3810257315e54a035691c204aa40a92f2f1085b
+  TransformerKit: 1295d491e9999960afdedcb0a163489827efd169
 
-PODFILE CHECKSUM: 947081240ffa04ccf8b8ad4472d781354d1e03ac
+PODFILE CHECKSUM: 225585cf10bc135473ae233d3a586db6478f48bc
 
 COCOAPODS: 1.11.2
