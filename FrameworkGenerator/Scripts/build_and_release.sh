@@ -1,21 +1,31 @@
+#!/bin/bash
 set -e
 
 TAG=$1
 xcrun swift -version
 echo "TAG: $TAG"
-read -p "Check that tag matches your installed swift version and press enter."
+TARGET=Themes #Pods-Dummy-Swift-Libs # we will build all dependencies of Swift target
+
+if [ -z "$TAG" ]
+then
+      echo "Tag not specified"
+      exit 1
+fi
 
 if ! command -v gh &> /dev/null
 then
     echo "Github Command line not found."
     echo "Run brew install gh && gh auth login (and then login properly)"
-    exit
+    exit 1
 fi
 
 # produce frameworks attached to Swift target in Podfile
-./Scripts/build_xcframeworks.sh Pods-Dummy-Swift
+./Scripts/build_xcframeworks.sh $TARGET
 
 # create a github release
-cd Pods/Products-Pods-Dummy-Swift || exit -1
+echo "Frameworks prepared. Uploading a new github release for $TAG"
+cd Pods/Products-$TARGET || exit 1
 FRAMEWORKS=$(find . -maxdepth 1 -name "*.xcframework.zip")
-gh release create $TAG -F checksums-tag.txt $FRAMEWORKS
+gh release create "$TAG" -F checksums-tag.txt $FRAMEWORKS
+gh release list
+open "https://github.com/beekpr/ios-binaries/releases/tag/$TAG"

@@ -129,11 +129,11 @@ PODS:
     - PubNub/Core (= 4.17.0)
   - PubNub/Core (4.17.0)
   - QRCodeReaderViewController (4.0.2)
-  - Realm (10.28.1):
-    - Realm/Headers (= 10.28.1)
-  - Realm/Headers (10.28.1)
-  - RealmSwift (10.28.1):
-    - Realm (= 10.28.1)
+  - Realm (10.25.1):
+    - Realm/Headers (= 10.25.1)
+  - Realm/Headers (10.25.1)
+  - RealmSwift (10.25.1):
+    - Realm (= 10.25.1)
   - RxBlocking (6.5.0):
     - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
@@ -189,7 +189,8 @@ DEPENDENCIES:
   - PromiseKit/UIKit (~> 6.8.3)
   - PubNub (~> 4.17.0)
   - QRCodeReaderViewController (~> 4.0.2)
-  - RealmSwift (~> 10.28.1)
+  - Realm (= 10.25.1)
+  - RealmSwift (= 10.25.1)
   - RxBlocking (~> 6.5.0)
   - RxCocoa (~> 6.5.0)
   - RxSwift (~> 6.5.0)
@@ -252,8 +253,8 @@ SPEC CHECKSUMS:
   PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
   PubNub: 306896876c3089884067609ff25d628a547d2942
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
-  Realm: f4674e0e7ee537f67a78d79bd8319bc777d61d06
-  RealmSwift: 0e0e4786685c4442bf56d3831dfefb5fa05d6fd6
+  Realm: 1a6e9b4f6983711655d8c0bcb6d2d29c3afbb1f3
+  RealmSwift: e72669550d27082aa4fad5d176f5076cfe806245
   RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
@@ -263,6 +264,6 @@ SPEC CHECKSUMS:
   Themes: d3810257315e54a035691c204aa40a92f2f1085b
   TransformerKit: 1295d491e9999960afdedcb0a163489827efd169
 
-PODFILE CHECKSUM: 225585cf10bc135473ae233d3a586db6478f48bc
+PODFILE CHECKSUM: 91b41c96206b5f759308e8f39404735699cb5bf5
 
 COCOAPODS: 1.11.2

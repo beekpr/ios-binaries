@@ -4,9 +4,10 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'Dummy' do
-  target 'Swift' do
+  target 'SwiftLibs' do
       pod 'RxBlocking', '~> 6.5.0'
-      pod 'RealmSwift', '~> 10.28.1'
+      pod 'Realm', '10.25.1'
+      pod 'RealmSwift', '10.25.1'
       pod 'RxSwift', '~> 6.5.0'
       pod 'RxCocoa', '~> 6.5.0'
       pod 'RxTest', '~> 6.5.0'
@@ -20,7 +21,7 @@ target 'Dummy' do
   end
 
   # these are very old dependencies that we don't have to rebuild because they do not change
-  target 'ObjC' do
+  target 'ObjectiveLibs' do
     pod 'CRToast', '~> 0.0.7' # ⛔️ https://github.com/cruffenach/CRToast
     pod 'TransformerKit', '~> 1.1.0' # ⛔️
     
