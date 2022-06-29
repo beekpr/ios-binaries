@@ -4,26 +4,39 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'Dummy' do
-  pod 'CRToast', '~> 0.0.7' # ⛔️ https://github.com/cruffenach/CRToast
-  pod 'ItlySdk' # ⛔️ https://github.com/amplitude/itly-sdk-ios
-  pod 'ItlySchemaValidatorPlugin' # ⛔️
-  pod 'Themes', :git => 'https://github.com/onmyway133/EasyTheme.git' # ⛔️
-  pod 'TransformerKit', '~> 1.1.0' ⛔️
-  
-  pod 'MaterialComponents/Snackbar', '~> 124.2.0' # ⛔️ https://github.com/material-components/material-components-ios
-  pod 'MaterialComponents/TextFields', '~> 124.2.0' # ⛔️
-  pod 'MaterialComponents/ActivityIndicator', '~> 124.2.0' # ⛔️
-  pod 'MaterialComponents/ProgressView', '~> 124.2.0' # ⛔️
-  pod 'MaterialComponents/Cards', '~> 124.2.0' # ⛔️
-  pod 'MDFInternationalization' # ⛔️ https://github.com/material-foundation/material-internationalization-ios
-  pod 'AFNetworking', :git => 'https://github.com/beekpr/AFNetworking', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession', 'NSURLConnection'] # ⛔️✅ (we need to upgrade fork)
-  pod 'SZTextView', '~> 1.3.0' # ⛔️ https://github.com/glaszig/SZTextView
-  pod 'QRCodeReaderViewController', '~> 4.0.2' # ⛔️ https://github.com/YannickL/QRCodeReaderViewController
-  pod 'KVOController', '~> 1.2.0' # ⛔️ "facebookarchive/KVOController"
-  pod 'PromiseKit/UIKit', '~> 6.8.3'  # ⛔️ https://github.com/mxcl/PromiseKit AnyPromise is not included in SPM
-  pod 'PromiseKit/SystemConfiguration', '~> 6.8.3' # ⛔️
-  pod 'PromiseKit/UIImagePickerController', '~> 6.8.3' # ⛔️
-  pod 'PubNub', '~> 4.17.0' # ⛔️✅ blocking changes in new version https://github.com/pubnub/objective-c
+  target 'SwiftLibs' do
+      pod 'RxBlocking', '~> 6.5.0'
+      pod 'Realm', '10.25.1'
+      pod 'RealmSwift', '10.25.1'
+      pod 'RxSwift', '~> 6.5.0'
+      pod 'RxCocoa', '~> 6.5.0'
+      pod 'RxTest', '~> 6.5.0'
+      pod 'RxBlocking', '~> 6.5.0'
+      pod 'Themes', :git => 'https://github.com/onmyway133/EasyTheme.git' # ⛔️
+      pod 'ItlySdk' # ⛔️ https://github.com/amplitude/itly-sdk-ios
+      pod 'ItlySchemaValidatorPlugin' # ⛔️
+      pod 'PromiseKit/UIKit', '~> 6.8.3'  # ⛔️ https://github.com/mxcl/PromiseKit AnyPromise is not included in SPM
+      pod 'PromiseKit/SystemConfiguration', '~> 6.8.3' # ⛔️
+      pod 'PromiseKit/UIImagePickerController', '~> 6.8.3' # ⛔️
+  end
+
+  # these are very old dependencies that we don't have to rebuild because they do not change
+  target 'ObjectiveLibs' do
+    pod 'CRToast', '~> 0.0.7' # ⛔️ https://github.com/cruffenach/CRToast
+    pod 'TransformerKit', '~> 1.1.0' # ⛔️
+    
+    pod 'MaterialComponents/Snackbar', '~> 124.2.0' # ⛔️ https://github.com/material-components/material-components-ios
+    pod 'MaterialComponents/TextFields', '~> 124.2.0' # ⛔️
+    pod 'MaterialComponents/ActivityIndicator', '~> 124.2.0' # ⛔️
+    pod 'MaterialComponents/ProgressView', '~> 124.2.0' # ⛔️
+    pod 'MaterialComponents/Cards', '~> 124.2.0' # ⛔️
+    pod 'MDFInternationalization' # ⛔️ https://github.com/material-foundation/material-internationalization-ios
+    pod 'AFNetworking', :git => 'https://github.com/beekpr/AFNetworking', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession', 'NSURLConnection'] # ⛔️✅ (we need to upgrade fork)
+    pod 'SZTextView', '~> 1.3.0' # ⛔️ https://github.com/glaszig/SZTextView
+    pod 'QRCodeReaderViewController', '~> 4.0.2' # ⛔️ https://github.com/YannickL/QRCodeReaderViewController
+    pod 'KVOController', '~> 1.2.0' # ⛔️ "facebookarchive/KVOController"
+    pod 'PubNub', '~> 4.17.0' # ⛔️✅ blocking changes in new version https://github.com/pubnub/objective-c
+  end
 end
 
 post_install do |installer|
