@@ -4,7 +4,10 @@ set -e
 TAG=$1
 xcrun swift -version
 echo "TAG: $TAG"
-TARGET=Themes #Pods-Dummy-Swift-Libs # we will build all dependencies of Swift target
+TARGET=Pods-Dummy-SwiftLibs
+#TARGET=SomeDependency <- SomeDependency = eg Themes <- will build specific dependency
+#TARGET=Pods-Dummy-SwiftLibs <- will build all dependencies of Swift target
+#TARGET=Pods-Dummy-ObjectiveLibs <- will build all dependencies of Objective-C target
 
 if [ -z "$TAG" ]
 then
