@@ -118,6 +118,12 @@ PODS:
   - MotionAnimator (4.0.1):
     - MotionInterchange (~> 3.0)
   - MotionInterchange (3.0.0)
+  - OCHamcrest (7.2.0)
+  - OCMockito (5.0.1):
+    - OCHamcrest (~> 7.0)
+  - OCMockitoSwift (0.3.4):
+    - OCHamcrest (~> 7.0)
+    - OCMockito (~> 5.0.1)
   - PromiseKit/CorePromise (6.8.5)
   - PromiseKit/SystemConfiguration (6.8.5):
     - PromiseKit/CorePromise
@@ -184,6 +190,7 @@ DEPENDENCIES:
   - MaterialComponents/Snackbar (~> 124.2.0)
   - MaterialComponents/TextFields (~> 124.2.0)
   - MDFInternationalization
+  - OCMockitoSwift (~> 0.3.0)
   - PromiseKit/SystemConfiguration (~> 6.8.3)
   - PromiseKit/UIImagePickerController (~> 6.8.3)
   - PromiseKit/UIKit (~> 6.8.3)
@@ -211,6 +218,9 @@ SPEC REPOS:
     - MDFTextAccessibility
     - MotionAnimator
     - MotionInterchange
+    - OCHamcrest
+    - OCMockito
+    - OCMockitoSwift
     - PromiseKit
     - PubNub
     - QRCodeReaderViewController
@@ -250,6 +260,9 @@ SPEC CHECKSUMS:
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
+  OCHamcrest: 8097ab14ab9366f44cd66638aa589fea3840d779
+  OCMockito: 063837a086c058e764fcd23e771089c1759e7197
+  OCMockitoSwift: 2c67d2bd996819431186c20e28c09d078d314c7c
   PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
   PubNub: 306896876c3089884067609ff25d628a547d2942
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
@@ -264,6 +277,6 @@ SPEC CHECKSUMS:
   Themes: d3810257315e54a035691c204aa40a92f2f1085b
   TransformerKit: 1295d491e9999960afdedcb0a163489827efd169
 
-PODFILE CHECKSUM: 0b5a69f7e1124ae5dcb51dd35abd32ad331ea40a
+PODFILE CHECKSUM: d27a1b475ec743a548c496df00ecaa32e8b35e5f
 
 COCOAPODS: 1.11.3

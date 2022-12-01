@@ -36,18 +36,21 @@ target 'Dummy' do
     pod 'QRCodeReaderViewController', '~> 4.0.2' # ⛔️ https://github.com/YannickL/QRCodeReaderViewController
     pod 'KVOController', '~> 1.2.0' # ⛔️ "facebookarchive/KVOController"
     pod 'PubNub', '~> 4.17.0' # ⛔️✅ blocking changes in new version https://github.com/pubnub/objective-c
+    pod 'OCMockitoSwift', '~> 0.3.0'
   end
 end
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            config.build_settings['ENABLE_BITCODE'] = 'YES'
-        end
-        target.build_configurations.each do |config|
             config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
-        end
-
-        puts target
+        end        
     end
+    installer.generated_projects.each do |project|
+        project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings["DEVELOPMENT_TEAM"] = "UD397JC254" # Beekeeper AG
+             end
+        end
+    end    
 end
