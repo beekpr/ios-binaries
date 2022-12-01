@@ -7,7 +7,11 @@ Do not delete releases on this repository or binaries attached to those releases
 ## What are tags for?
 Every new swift version requires new version of swift binaries, which is why we have separate tags like swift-5.7. Swift version is usually incremented with every new major release of Xcode.
 
-In case of ObjC libraries, this is not needed, and we can keep them forever on `objc` tag.
+In case of ObjC libraries, each time we update libraries we bump version which is integer, e.g. `objc-v2`
+
+ℹ️ | We keep legacy `objc` tag, for past release where we did not version Objetive-C releases
+:---: | :---
+
 
 ## How to upload binaries
 1. In one directory, prepare zipped xcframeworks that you want to upload
