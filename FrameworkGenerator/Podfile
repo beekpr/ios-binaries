@@ -12,6 +12,7 @@ target 'Dummy' do
       pod 'RxCocoa', '~> 6.5.0'
       pod 'RxTest', '~> 6.5.0'
       pod 'RxBlocking', '~> 6.5.0'
+      pod 'OCMockitoSwift', '~> 0.3.0'
       pod 'Themes', :git => 'https://github.com/onmyway133/EasyTheme.git' # ⛔️
       pod 'ItlySdk' # ⛔️ https://github.com/amplitude/itly-sdk-ios
       pod 'ItlySchemaValidatorPlugin' # ⛔️
@@ -36,7 +37,6 @@ target 'Dummy' do
     pod 'QRCodeReaderViewController', '~> 4.0.2' # ⛔️ https://github.com/YannickL/QRCodeReaderViewController
     pod 'KVOController', '~> 1.2.0' # ⛔️ "facebookarchive/KVOController"
     pod 'PubNub', '~> 4.17.0' # ⛔️✅ blocking changes in new version https://github.com/pubnub/objective-c
-    pod 'OCMockitoSwift', '~> 0.3.0'
   end
 end
 
