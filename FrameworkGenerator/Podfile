@@ -6,13 +6,13 @@ inhibit_all_warnings!
 target 'Dummy' do
   target 'SwiftLibs' do
       pod 'RxBlocking', '~> 6.5.0'
-      pod 'Realm', '10.32.3'
-      pod 'RealmSwift', '10.32.3'
+      pod 'Realm', '~> 10.39.1'
+      pod 'RealmSwift', '~> 10.39.1'
       pod 'RxSwift', '~> 6.5.0'
       pod 'RxCocoa', '~> 6.5.0'
       pod 'RxTest', '~> 6.5.0'
       pod 'RxBlocking', '~> 6.5.0'
-      pod 'OCMockitoSwift', '~> 0.3.0'
+      pod 'OCMockitoSwift', '~> 0.6.0'
       pod 'Themes', :git => 'https://github.com/onmyway133/EasyTheme.git' # ⛔️
       pod 'ItlySdk' # ⛔️ https://github.com/amplitude/itly-sdk-ios
       pod 'ItlySchemaValidatorPlugin' # ⛔️
