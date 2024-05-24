@@ -5,6 +5,7 @@ inhibit_all_warnings!
 
 target 'Dummy' do
   target 'SwiftLibs' do
+      pod 'GoogleMLKit/Translate', '~> 5.0.0'
       pod 'RxBlocking', '~> 6.5.0'
       pod 'Realm', '~> 10.40.1'
       pod 'RealmSwift', '~> 10.40.1'
