@@ -15,8 +15,9 @@ TMP_DIR="${BUILD_DIR}/Tmp"
 IOS_ARCHIVE_PATH="${TMP_DIR}/iOS.xcarchive"
 IOS_SIM_ARCHIVE_PATH="${TMP_DIR}/iOSSimulator.xcarchive"
 OUTPUT="Products-$SCHEME"
+CODE_SIGN_IDENTITY="Apple Distribution: Beekeeper AG (J5PKJU84GU)"
 
-pod install
+bundle exec pod install
 cd Pods
 rm -rf "${BUILD_DIR}"
 rm -rf  "$OUTPUT"
@@ -47,6 +48,8 @@ create_xcframework() {
     -framework "${IOS_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework" \
     -output "${OUTPUT}/${FRAMEWORK_NAME}.xcframework" \
     | xcpretty
+
+    codesign --timestamp -v --sign "${CODE_SIGN_IDENTITY}" "${OUTPUT}/${FRAMEWORK_NAME}.xcframework"
 
     cd "$OUTPUT"
     zip -r "${FRAMEWORK_NAME}.xcframework.zip" "${FRAMEWORK_NAME}.xcframework"
