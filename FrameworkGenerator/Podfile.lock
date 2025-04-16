@@ -10,7 +10,6 @@ PODS:
   - AFNetworking/Reachability (2.6.3)
   - AFNetworking/Security (2.6.3)
   - AFNetworking/Serialization (2.6.3)
-  - CRToast (0.0.9)
   - DSJSONSchemaValidation (2.0.7)
   - ItlySchemaValidatorPlugin (1.2.1):
     - DSJSONSchemaValidation (~> 2.0.0)
@@ -140,39 +139,23 @@ PODS:
   - Realm/Headers (10.53.1)
   - RealmSwift (10.53.1):
     - Realm (= 10.53.1)
-  - RxBlocking (6.7.1):
-    - RxSwift (= 6.7.1)
-  - RxCocoa (6.7.1):
-    - RxRelay (= 6.7.1)
-    - RxSwift (= 6.7.1)
-  - RxRelay (6.7.1):
-    - RxSwift (= 6.7.1)
-  - RxSwift (6.7.1)
-  - RxTest (6.7.1):
-    - RxSwift (= 6.7.1)
+  - RxBlocking (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxCocoa (6.9.0):
+    - RxRelay (= 6.9.0)
+    - RxSwift (= 6.9.0)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxSwift (6.9.0)
+  - RxTest (6.9.0):
+    - RxSwift (= 6.9.0)
+  - SQLCipher (4.6.0):
+    - SQLCipher/standard (= 4.6.0)
+  - SQLCipher/common (4.6.0)
+  - SQLCipher/standard (4.6.0):
+    - SQLCipher/common
   - SZTextView (1.3.0)
   - Themes (2.0.0)
-  - TransformerKit (1.1.1):
-    - TransformerKit/Core (= 1.1.1)
-    - TransformerKit/Cryptography (= 1.1.1)
-    - TransformerKit/Data (= 1.1.1)
-    - TransformerKit/Date (= 1.1.1)
-    - TransformerKit/Image (= 1.1.1)
-    - TransformerKit/JSON (= 1.1.1)
-    - TransformerKit/String (= 1.1.1)
-  - TransformerKit/Core (1.1.1)
-  - TransformerKit/Cryptography (1.1.1):
-    - TransformerKit/Core
-  - TransformerKit/Data (1.1.1):
-    - TransformerKit/Core
-  - TransformerKit/Date (1.1.1):
-    - TransformerKit/Core
-  - TransformerKit/Image (1.1.1):
-    - TransformerKit/Core
-  - TransformerKit/JSON (1.1.1):
-    - TransformerKit/Core
-  - TransformerKit/String (1.1.1):
-    - TransformerKit/Core
 
 DEPENDENCIES:
   - AFNetworking/NSURLConnection (from `https://github.com/beekpr/AFNetworking`)
@@ -180,7 +163,6 @@ DEPENDENCIES:
   - AFNetworking/Reachability (from `https://github.com/beekpr/AFNetworking`)
   - AFNetworking/Security (from `https://github.com/beekpr/AFNetworking`)
   - AFNetworking/Serialization (from `https://github.com/beekpr/AFNetworking`)
-  - CRToast (~> 0.0.7)
   - ItlySchemaValidatorPlugin
   - ItlySdk
   - KVOController (~> 1.2.0)
@@ -198,17 +180,16 @@ DEPENDENCIES:
   - QRCodeReaderViewController (~> 4.0.2)
   - Realm (~> 10.53.1)
   - RealmSwift (~> 10.53.1)
-  - RxBlocking (~> 6.7.1)
-  - RxCocoa (~> 6.7.1)
-  - RxSwift (~> 6.7.1)
-  - RxTest (~> 6.7.1)
+  - RxBlocking (~> 6.9.0)
+  - RxCocoa (~> 6.9.0)
+  - RxSwift (~> 6.9.0)
+  - RxTest (~> 6.9.0)
+  - SQLCipher (= 4.6.0)
   - SZTextView (~> 1.3.0)
   - Themes (from `https://github.com/onmyway133/EasyTheme.git`)
-  - TransformerKit (~> 1.1.0)
 
 SPEC REPOS:
   trunk:
-    - CRToast
     - DSJSONSchemaValidation
     - ItlySchemaValidatorPlugin
     - ItlySdk
@@ -231,8 +212,8 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxTest
+    - SQLCipher
     - SZTextView
-    - TransformerKit
 
 EXTERNAL SOURCES:
   AFNetworking:
@@ -250,7 +231,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 4e7e2ee63993f6aa0bbad6f8bb7641d9bfa85652
-  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
   DSJSONSchemaValidation: 46e30ccfa9908c49d184f453d556f55aa0aac1ff
   ItlySchemaValidatorPlugin: d41cd1ec8928c15b5ecc54d90d5f83b32c902411
   ItlySdk: bac0dd9414a46595845e8536f9472de2201ef32a
@@ -268,15 +248,15 @@ SPEC CHECKSUMS:
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
   Realm: 82e4ea18703bf240dd443b5ceef68d6f9454ec49
   RealmSwift: 79a910911b6a5663b7570517c8237e3dbd2b0783
-  RxBlocking: 48b86e3ed2a9a19150491e8dc5409973baac2eb1
-  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
-  RxRelay: 4151ba01152436b08271e08410135e099880eae5
-  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
-  RxTest: eec2bff159d799cdc02da2b40ef47e43dc17e688
+  RxBlocking: 5d2b26d019b6ba9eb3f58638611f124609c44822
+  RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  RxTest: fa7749822359a10a19b9fa32b80dbe608e4ce44e
+  SQLCipher: 30a8e81afa6128e600b17ffa77d0f92fa05ed208
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
   Themes: d3810257315e54a035691c204aa40a92f2f1085b
-  TransformerKit: 1295d491e9999960afdedcb0a163489827efd169
 
-PODFILE CHECKSUM: a1f5732f3baa2f9241bd9fa9390e59159eb3fe29
+PODFILE CHECKSUM: 6537e6c4e3602e7bd70199a1213f2df89231cbad
 
 COCOAPODS: 1.15.2

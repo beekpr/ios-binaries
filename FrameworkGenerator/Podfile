@@ -5,13 +5,12 @@ inhibit_all_warnings!
 
 target 'Dummy' do
   target 'SwiftLibs' do
-      pod 'RxBlocking', '~> 6.7.1'
       pod 'Realm', '~> 10.53.1'
       pod 'RealmSwift', '~> 10.53.1'
-      pod 'RxSwift', '~> 6.7.1'
-      pod 'RxCocoa', '~> 6.7.1'
-      pod 'RxTest', '~> 6.7.1'
-      pod 'RxBlocking', '~> 6.7.1'
+      pod 'RxSwift', '~> 6.9.0'
+      pod 'RxCocoa', '~> 6.9.0'
+      pod 'RxTest', '~> 6.9.0'
+      pod 'RxBlocking', '~> 6.9.0'
       pod 'OCMockitoSwift', '~> 0.6.0'
       pod 'Themes', :git => 'https://github.com/onmyway133/EasyTheme.git' # ⛔️
       pod 'ItlySdk' # ⛔️ https://github.com/amplitude/itly-sdk-ios
@@ -19,13 +18,11 @@ target 'Dummy' do
       pod 'PromiseKit/UIKit', '~> 6.8.3'  # ⛔️ https://github.com/mxcl/PromiseKit AnyPromise is not included in SPM
       pod 'PromiseKit/SystemConfiguration', '~> 6.8.3' # ⛔️
       pod 'PromiseKit/UIImagePickerController', '~> 6.8.3' # ⛔️
+      pod 'SQLCipher', '4.6.0'
   end
 
   # these are very old dependencies that we don't have to rebuild because they do not change
-  target 'ObjectiveLibs' do
-    pod 'CRToast', '~> 0.0.7' # ⛔️ https://github.com/cruffenach/CRToast
-    pod 'TransformerKit', '~> 1.1.0' # ⛔️
-    
+  target 'ObjectiveLibs' do    
     pod 'MaterialComponents/Snackbar', '~> 124.2.0' # ⛔️ https://github.com/material-components/material-components-ios
     pod 'MaterialComponents/TextFields', '~> 124.2.0' # ⛔️
     pod 'MaterialComponents/ActivityIndicator', '~> 124.2.0' # ⛔️
