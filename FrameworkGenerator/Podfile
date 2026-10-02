@@ -25,7 +25,7 @@ target 'Dummy' do
     pod 'MaterialComponents/ProgressView', '~> 124.2.0' # ⛔️
     pod 'MaterialComponents/Cards', '~> 124.2.0' # ⛔️
     pod 'MDFInternationalization' # ⛔️ https://github.com/material-foundation/material-internationalization-ios
-    pod 'AFNetworking', :git => 'https://github.com/beekpr/AFNetworking', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession', 'NSURLConnection'] # ⛔️✅ (we need to upgrade fork)
+    pod 'AFNetworking', :git => 'https://github.com/lumapps/AFNetworking', :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession', 'NSURLConnection'] # ⛔️✅ (we need to upgrade fork)
     pod 'KVOController', '~> 1.2.0' # ⛔️ "facebookarchive/KVOController"
     pod 'PubNub', '~> 4.17.0' # ⛔️✅ blocking changes in new version https://github.com/pubnub/objective-c
   end
