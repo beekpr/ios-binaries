@@ -146,11 +146,11 @@ PODS:
   - Themes (2.0.0)
 
 DEPENDENCIES:
-  - AFNetworking/NSURLConnection (from `https://github.com/beekpr/AFNetworking`)
-  - AFNetworking/NSURLSession (from `https://github.com/beekpr/AFNetworking`)
-  - AFNetworking/Reachability (from `https://github.com/beekpr/AFNetworking`)
-  - AFNetworking/Security (from `https://github.com/beekpr/AFNetworking`)
-  - AFNetworking/Serialization (from `https://github.com/beekpr/AFNetworking`)
+  - AFNetworking/NSURLConnection (from `https://github.com/lumapps/AFNetworking`)
+  - AFNetworking/NSURLSession (from `https://github.com/lumapps/AFNetworking`)
+  - AFNetworking/Reachability (from `https://github.com/lumapps/AFNetworking`)
+  - AFNetworking/Security (from `https://github.com/lumapps/AFNetworking`)
+  - AFNetworking/Serialization (from `https://github.com/lumapps/AFNetworking`)
   - ItlySchemaValidatorPlugin
   - ItlySdk
   - KVOController (~> 1.2.0)
@@ -192,14 +192,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AFNetworking:
-    :git: https://github.com/beekpr/AFNetworking
+    :git: https://github.com/lumapps/AFNetworking
   Themes:
     :git: https://github.com/onmyway133/EasyTheme.git
 
 CHECKOUT OPTIONS:
   AFNetworking:
     :commit: 90742e0890a48f386a9549251e802c7e8ef6376e
-    :git: https://github.com/beekpr/AFNetworking
+    :git: https://github.com/lumapps/AFNetworking
   Themes:
     :commit: 32e5c28248f89f17511ad2f7602b0f01247a25eb
     :git: https://github.com/onmyway133/EasyTheme.git
